@@ -51,7 +51,7 @@
 
 		.links {
 			font-size: 14px;
-			gap: 5px;
+			gap: 10px;
 		}
 	}
 </style>
