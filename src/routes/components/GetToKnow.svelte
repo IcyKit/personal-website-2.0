@@ -44,7 +44,7 @@
 
 	@media (max-width: 460px) {
 		h2 {
-			font-size: 16px;
+			font-size: 18px;
 			margin-bottom: 20px;
 		}
 

@@ -4,15 +4,17 @@
 	export let image: string;
 </script>
 
-<div class="card">
-	<div class="title">
-		<h3>{title}</h3>
-		<p>{descr}</p>
+<a href="https://google.com">
+	<div class="card">
+		<div class="title">
+			<h3>{title}</h3>
+			<p>{descr}</p>
+		</div>
+		<div class="image">
+			<img src={image} alt="card image" />
+		</div>
 	</div>
-	<div class="image">
-		<img src={image} alt="card image" />
-	</div>
-</div>
+</a>
 
 <style>
 	.card {
@@ -23,6 +25,11 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 15px 0 15px 0;
+		transition: 0.3s all;
+	}
+
+	.card:hover {
+		background: #eeeeee;
 	}
 
 	.title {
@@ -46,13 +53,21 @@
 		width: 100px;
 	}
 
+	@media (max-width: 750px) {
+		.card:nth-child(4) {
+			grid-column: span 3;
+		}
+	}
+
+	@media (max-width: 570px) {
+		.card:nth-child(4) {
+			grid-column: span 1;
+		}
+	}
+
 	@media (max-width: 460px) {
 		h3 {
 			line-height: 16px;
-		}
-
-		.title {
-			margin-bottom: 8px;
 		}
 
 		.image {
