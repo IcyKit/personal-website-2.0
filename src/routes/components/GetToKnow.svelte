@@ -27,7 +27,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		justify-items: stretch;
-		gap: 10px;
+		gap: 15px;
 	}
 
 	@media (max-width: 750px) {

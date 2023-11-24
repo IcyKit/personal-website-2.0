@@ -48,12 +48,7 @@
 
 	@media (max-width: 460px) {
 		h3 {
-			font-size: 12px;
-			line-height: 12px;
-		}
-
-		p {
-			font-size: 10px;
+			line-height: 16px;
 		}
 
 		.title {
