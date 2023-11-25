@@ -90,11 +90,16 @@
 		}
 
 		.footer__top {
-			margin-bottom: 30px;
+			margin-bottom: 40px;
+			justify-items: center;
 		}
 
 		h3 {
 			margin-bottom: 20px;
+		}
+
+		p {
+			text-align: center;
 		}
 
 		h3,
