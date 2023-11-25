@@ -2,9 +2,10 @@
 	export let title: string;
 	export let descr: string;
 	export let image: string;
+	export let link: string;
 </script>
 
-<a href="https://google.com">
+<a href={link}>
 	<div class="card">
 		<div class="title">
 			<h3>{title}</h3>

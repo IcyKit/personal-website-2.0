@@ -1,17 +1,15 @@
 <script lang="ts">
-	import DiGithubBadge from 'svelte-icons/di/DiGithubBadge.svelte';
-
 	export let link: string;
 	export let nick: string;
 	export let icon;
 </script>
 
-<a href="https://google.com" target="_blank">
+<a href={link} target="_blank">
 	<div class="badge">
 		<div class="icon">
-			<DiGithubBadge />
+			<svelte:component this={icon} />
 		</div>
-		<h3>IcyKit</h3>
+		<h3>{nick}</h3>
 	</div>
 </a>
 
@@ -20,7 +18,7 @@
 		background: #f6f6f6;
 		border: 1px solid #ebebeb;
 		border-radius: 10px;
-		padding: 5px 0;
+		padding: 10px 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -36,8 +34,8 @@
 	}
 
 	.icon {
-		width: 35px;
-		margin-right: 5px;
+		width: 20px;
+		margin-right: 10px;
 	}
 
 	@media (max-width: 670px) {
@@ -46,7 +44,7 @@
 		}
 
 		.icon {
-			width: 30px;
+			width: 20px;
 		}
 	}
 </style>
