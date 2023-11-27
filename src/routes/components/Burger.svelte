@@ -21,6 +21,14 @@
 </details>
 
 <style>
+	details {
+		padding: 5px;
+		border-radius: 5px;
+		background-color: #f6f6f6;
+		border: 1px solid #ebebeb;
+		color: #1f1f1f;
+	}
+
 	summary {
 		width: 20px;
 	}

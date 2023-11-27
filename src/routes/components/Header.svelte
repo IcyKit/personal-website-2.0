@@ -28,6 +28,8 @@
 		font-size: 16px;
 		font-weight: bold;
 		text-transform: uppercase;
+		display: flex;
+		align-items: center;
 	}
 
 	.links {
