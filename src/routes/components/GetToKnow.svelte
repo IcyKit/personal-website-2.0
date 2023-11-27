@@ -10,7 +10,7 @@
 
 {#if isVisible}
 	<div class="info" transition:fly={{ y: 20, duration: 500 }}>
-		<h2>Get to know me</h2>
+		<h2>Get to know me <span>🤝🏻</span></h2>
 		<div class="cards">
 			<Card title="Stack" descr="My tech stack" link="/stack" image="ts.png" />
 			<Card title="About me" descr="Who I am" link="/" image="memoji.png" />
@@ -21,6 +21,10 @@
 {/if}
 
 <style>
+	span {
+		font-size: 28px;
+		padding-left: 5px;
+	}
 	.info {
 		padding-top: 100px;
 	}

@@ -62,7 +62,7 @@
 
 {#if isVisible}
 	<div class="touch" transition:fly={{ y: 20, duration: 500 }}>
-		<h2>Get in touch</h2>
+		<h2>Get in touch <span>🤙🏻</span></h2>
 		<div class="badges">
 			{#each badges as badge}
 				<Badge link={badge.props.link} nick={badge.props.nick} icon={badge.component} />
@@ -72,6 +72,10 @@
 {/if}
 
 <style>
+	span {
+		font-size: 28px;
+		padding-left: 5px;
+	}
 	.touch {
 		padding-top: 100px;
 	}

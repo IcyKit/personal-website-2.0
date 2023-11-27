@@ -9,23 +9,29 @@
 
 {#if isVisible}
 	<section class="about" transition:fly={{ y: 20, duration: 500 }}>
-		<h2>About me</h2>
+		<h2>About me <span>🧔🏻‍♂️</span></h2>
 		<div class="about-container">
 			<div class="image">
 				<img src="profile2.jpg" alt="profile photo" />
 			</div>
 			<p>
-				I'm a 20 year old Fullstack Developer from St. Petersburg, Russia.I have 1 year of hands-on
-				experience designing, developing, and implementing applications and solutions using a range
-				of technologies and programming languages.Previously, I was an Affiliate Manager and UI/UX
-				Designer. Such different areas of IT gave me a complete understanding of the creation of the
-				product and a view from each side of the development.
+				I am a Fullstack Developer from St. Petersburg with 2 years of experience. I have 1 year of
+				hands-on experience designing, developing, and implementing applications and solutions using
+				a range of technologies and programming languages. Previously, I was a UI/UX Designer. Such
+				different areas of IT gave me a complete understanding of the creation of the product and a
+				view from each side of the development. I am also involved in mentoring newcomers to
+				programming
 			</p>
 		</div>
 	</section>
 {/if}
 
 <style>
+	span {
+		font-size: 28px;
+		padding-left: 5px;
+	}
+
 	.about {
 		padding-top: 100px;
 	}

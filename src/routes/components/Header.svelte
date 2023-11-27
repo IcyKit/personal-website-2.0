@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import Burger from './Burger.svelte';
 </script>
 
 <nav>
@@ -13,6 +14,7 @@
 			>Workspace</a
 		>
 	</div>
+	<Burger />
 </nav>
 
 <style>
