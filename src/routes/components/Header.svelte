@@ -40,12 +40,6 @@
 		text-decoration: underline;
 	}
 
-	/* @media (max-width: 750px) {
-		nav {
-			padding: 30px 15px 0 15px;
-		}
-	} */
-
 	@media (max-width: 460px) {
 		.title {
 			font-size: 14px;
@@ -54,6 +48,7 @@
 		.links {
 			font-size: 14px;
 			gap: 10px;
+			display: none;
 		}
 	}
 </style>

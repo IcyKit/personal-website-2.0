@@ -1,25 +1,37 @@
 <script>
 	import FaBars from 'svelte-icons/fa/FaBars.svelte';
+	import { page } from '$app/stores';
 </script>
 
-<details class="daisydropdown">
+<details class="daisydropdown daisydropdown-content daisydropdown-end">
 	<summary class="m-1 btn"><FaBars /></summary>
-	<ul class="p-2 shadow daisymenu daisydropdown-content z-[1] bg-base-100 daisyrounded-box w-52">
-		<li><a>Item 1</a></li>
-		<li><a>Item 2</a></li>
+	<ul class="daisydropdown-content z-[1] daisymenu p-2 shadow bg-base-100 rounded-box w-52">
+		<li>
+			<a aria-current={$page.url.pathname === '/stack' ? 'page' : undefined} href="/stack">Stack</a>
+		</li>
+		<li>
+			<a aria-current={$page.url.pathname === '/works' ? 'page' : undefined} href="/works">Works</a>
+		</li>
+		<li>
+			<a aria-current={$page.url.pathname === '/workspace' ? 'page' : undefined} href="/workspace"
+				>Workspace</a
+			>
+		</li>
 	</ul>
 </details>
 
 <style>
 	summary {
 		width: 20px;
-		text-decoration: none;
 	}
 
-	.dropdown-summary::-webkit-details-marker {
-		display: none;
+	ul {
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 	}
-	.dropdown-summary::marker {
-		display: none;
+
+	@media (min-width: 461px) {
+		details {
+			display: none;
+		}
 	}
 </style>

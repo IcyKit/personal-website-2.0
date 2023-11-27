@@ -8,3 +8,11 @@ html {
 	font-family: 'Inter', sans-serif;
 	color: #1f1f1f;
 }
+
+summary::-webkit-details-marker {
+	display: none; /* Скрыть маркер для Chrome и Safari */
+}
+
+summary {
+	list-style: none; /* Скрыть маркер для остальных браузеров */
+}
