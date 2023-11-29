@@ -9,3 +9,32 @@
 	</div>
 	<Work />
 </div>
+
+<style>
+	.workpage {
+		padding-top: 100px;
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.title > p {
+		font-size: 16px;
+	}
+
+	@media (max-width: 460px) {
+		.workpage {
+			padding-top: 40px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+
+		.title > p {
+			font-size: 12px;
+		}
+	}
+</style>
