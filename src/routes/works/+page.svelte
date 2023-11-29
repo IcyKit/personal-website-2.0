@@ -30,11 +30,11 @@
 		}
 
 		h2 {
-			font-size: 16px;
+			font-size: 18px;
 		}
 
 		.title > p {
-			font-size: 12px;
+			font-size: 16px;
 		}
 	}
 </style>

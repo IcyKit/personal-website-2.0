@@ -1,7 +1,6 @@
 <script>
 	import FaBars from 'svelte-icons/fa/FaBars.svelte';
 	import { page } from '$app/stores';
-	import { fly } from 'svelte/transition';
 </script>
 
 <details class="daisydropdown daisydropdown-content daisydropdown-end">

@@ -1,26 +1,13 @@
-<script>
-	import { fly } from 'svelte/transition';
-	import { onMount } from 'svelte';
-
-	let isVisible = false;
-
-	onMount(() => {
-		isVisible = true;
-	});
-</script>
-
-{#if isVisible}
-	<div class="head" transition:fly={{ y: 20, duration: 500 }}>
-		<div>
-			<h2><span>Hi!</span></h2>
-			<h2>My name is <span>Nikita Efimov</span></h2>
-			<p>Fullstack Developer from Saint Petersburg, Russia</p>
-		</div>
-		<div class="avatar">
-			<img src="profile.jpg" alt="profile photo" />
-		</div>
+<div class="head">
+	<div>
+		<h2><span>Hi!</span></h2>
+		<h2>My name is <span>Nikita Efimov</span></h2>
+		<p>Fullstack Developer from Saint Petersburg, Russia</p>
 	</div>
-{/if}
+	<div class="avatar">
+		<img src="profile.png" alt="profile photo" />
+	</div>
+</div>
 
 <style>
 	.head {
@@ -50,12 +37,6 @@
 		height: 220px;
 		border-radius: 30px;
 	}
-
-	/* @media (max-width: 750px) {
-		.head {
-			padding: 100px 15px 0 15px;
-		}
-	} */
 
 	@media (max-width: 650px) {
 		p {

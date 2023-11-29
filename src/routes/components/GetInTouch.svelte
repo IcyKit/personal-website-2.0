@@ -7,13 +7,6 @@
 	import FaInstagram from 'svelte-icons/fa/FaInstagram.svelte';
 	import FaVk from 'svelte-icons/fa/FaVk.svelte';
 
-	import { fly } from 'svelte/transition';
-	let isVisible = false;
-
-	setTimeout(() => {
-		isVisible = true;
-	}, 1500);
-
 	const badges = [
 		{
 			component: FaGithub,
@@ -60,16 +53,14 @@
 	];
 </script>
 
-{#if isVisible}
-	<div class="touch" transition:fly={{ y: 20, duration: 500 }}>
-		<h2>Get in touch <span>🤙🏻</span></h2>
-		<div class="badges">
-			{#each badges as badge}
-				<Badge link={badge.props.link} nick={badge.props.nick} icon={badge.component} />
-			{/each}
-		</div>
+<div class="touch">
+	<h2>Get in touch <span>🤙🏻</span></h2>
+	<div class="badges">
+		{#each badges as badge}
+			<Badge link={badge.props.link} nick={badge.props.nick} icon={badge.component} />
+		{/each}
 	</div>
-{/if}
+</div>
 
 <style>
 	span {

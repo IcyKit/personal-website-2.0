@@ -26,7 +26,7 @@
 
 <style>
 	.work {
-		padding-top: 15px;
+		padding-top: 30px;
 	}
 
 	.header {
@@ -60,17 +60,26 @@
 		margin-top: 12px;
 	}
 
+	.body > p {
+		font-size: 16px;
+	}
+
 	@media (max-width: 460px) {
 		.logo {
-			width: 35px;
+			width: 40px;
+			margin-right: 10px;
 		}
 
 		h3 {
-			font-size: 14px;
+			font-size: 16px;
 		}
 
 		p {
-			font-size: 12px;
+			font-size: 14px;
+		}
+
+		.body > p {
+			font-size: 14px;
 		}
 	}
 </style>

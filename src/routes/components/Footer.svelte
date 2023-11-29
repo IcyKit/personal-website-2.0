@@ -1,55 +1,43 @@
-<script>
-	import { fly } from 'svelte/transition';
-	let isVisible = false;
-
-	setTimeout(() => {
-		isVisible = true;
-	}, 2500);
-</script>
-
-{#if isVisible}
-	<div class="footer" transition:fly={{ y: 20, duration: 500 }}>
-		<div class="footer__top">
-			<div class="links">
-				<h3>Links</h3>
-				<ul>
-					<li>
-						<a href="/about">Home</a>
-					</li>
-					<li>
-						<a href="/stack">Stack</a>
-					</li>
-					<li>
-						<a href="/workspace">Workspace</a>
-					</li>
-					<li>
-						<a href="/works">Works</a>
-					</li>
-				</ul>
-			</div>
-			<div class="elsewhere">
-				<h3>Elsewhere</h3>
-				<ul>
-					<li>
-						<a href="https://t.me/icykit" target="_blank">Telegram</a>
-					</li>
-					<li>
-						<a href="https://github.com/IcyKit" target="_blank">GitHub</a>
-					</li>
-					<li>
-						<a href="https://discord.com/users/193069352554201088/" target="_blank">Discord</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/nikita-efimov-756461237/" target="_blank"
-							>LinkedIn</a
-						>
-					</li>
-				</ul>
-			</div>
+<div class="footer">
+	<div class="footer__top">
+		<div class="links">
+			<h3>Links</h3>
+			<ul>
+				<li>
+					<a href="/about">Home</a>
+				</li>
+				<li>
+					<a href="/stack">Stack</a>
+				</li>
+				<li>
+					<a href="/workspace">Workspace</a>
+				</li>
+				<li>
+					<a href="/works">Works</a>
+				</li>
+			</ul>
 		</div>
-		<p>© 2023 Nikita Efimov. All Rights Reserved.</p>
+		<div class="elsewhere">
+			<h3>Elsewhere</h3>
+			<ul>
+				<li>
+					<a href="https://t.me/icykit" target="_blank">Telegram</a>
+				</li>
+				<li>
+					<a href="https://github.com/IcyKit" target="_blank">GitHub</a>
+				</li>
+				<li>
+					<a href="https://discord.com/users/193069352554201088/" target="_blank">Discord</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/nikita-efimov-756461237/" target="_blank">LinkedIn</a
+					>
+				</li>
+			</ul>
+		</div>
 	</div>
-{/if}
+	<p>© 2023 Nikita Efimov. All Rights Reserved.</p>
+</div>
 
 <style>
 	.footer {
@@ -64,15 +52,19 @@
 	}
 
 	h3 {
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: bold;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 
 	ul {
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
+	}
+
+	a {
+		font-size: 14px;
 	}
 
 	a:hover {
