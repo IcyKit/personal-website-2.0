@@ -48,6 +48,12 @@
 		}
 	}
 
+	@media (max-width: 670px) {
+		span {
+			font-size: 22px;
+		}
+	}
+
 	@media (max-width: 570px) {
 		.cards {
 			grid-template-columns: 1fr 1fr;
@@ -57,7 +63,7 @@
 	@media (max-width: 460px) {
 		h2 {
 			font-size: 18px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 
 		.info {

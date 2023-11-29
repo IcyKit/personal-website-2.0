@@ -61,6 +61,9 @@
 	}
 
 	@media (max-width: 670px) {
+		span {
+			font-size: 22px;
+		}
 		.about {
 			padding-top: 50px;
 		}
@@ -88,6 +91,12 @@
 	@media (max-width: 460px) {
 		h2 {
 			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 22px;
 		}
 	}
 

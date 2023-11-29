@@ -94,12 +94,26 @@
 	}
 
 	@media (max-width: 670px) {
+		span {
+			font-size: 22px;
+		}
+
+		h2 {
+			font-size: 18px;
+		}
 		.touch {
 			padding-top: 50px;
 		}
 
 		.badges {
 			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (max-width: 460px) {
+		h2 {
+			font-size: 18px;
+			margin-bottom: 10px;
 		}
 	}
 </style>
