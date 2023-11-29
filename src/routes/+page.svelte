@@ -6,7 +6,7 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<div transition:fade={{ delay: 500, duration: 500 }}>
+<div>
 	<Greetings />
 	<GetToKnow />
 	<About />

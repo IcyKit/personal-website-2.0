@@ -43,6 +43,10 @@
 	}
 
 	@media (max-width: 460px) {
+		nav {
+			padding-top: 15px;
+		}
+
 		.title {
 			font-size: 14px;
 		}
