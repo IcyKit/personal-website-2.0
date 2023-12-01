@@ -1,85 +1,102 @@
 <div class="work">
-	<div class="header">
-		<div class="logo">
-			<img src="nex-logo.png" alt="company logo" />
-		</div>
-		<div class="text">
-			<div class="title">
-				<h3>Nexign</h3>
-				<p>Fullstack Developer</p>
-			</div>
-			<div class="date">
-				<p>Feb 2023 - Present</p>
-			</div>
-		</div>
-	</div>
-	<div class="body">
-		<p>
-			I'm a 20 year old Fullstack Developer from St. Petersburg, Russia.I have 1 year of hands-on
-			experience designing, developing, and implementing applications and solutions using a range of
-			technologies and programming languages.Previously, I was an Affiliate Manager and UI/UX
-			Designer. Such different areas of IT gave me a complete understanding of the creation of the
-			product and a view from each side of the development.
-		</p>
-	</div>
+    <div class="header">
+        <div class="logo">
+            <img src="nex-logo.png" alt="company logo" />
+        </div>
+        <div class="text">
+            <div class="title">
+                <h3><a href="https://nexign.com" target="_blank">Nexign</a></h3>
+                <p>Fullstack Developer</p>
+            </div>
+            <div class="date">
+                <p>Feb 2023 - Present</p>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <p>
+            1. Creating a service for onboarding, adaptation and training of new
+            employees within the company.<br />
+            Participate in the testing process using Jest.<br /><br />
+            After the internship I got the position of Frontend developer. <br /><br />
+            2. Frontend - development of a payment system for Russia's largest telecom and internet
+            operators.<br />
+            Development and support of high-performance web applications based on React.js and TypeScript.
+            TypeScript.<br />
+            Using MobX for efficient application state management.<br />
+            Working with PostgreSQL database, using Prisma.<br />
+            Working with GraphQL and Apollo Federation to optimize queries and data management.<br />
+            Developing components using Material UI framework.<br />
+
+        </p>
+    </div>
 </div>
 
 <style>
-	.work {
-		padding-top: 30px;
-	}
+    .work {
+        padding-top: 30px;
+    }
 
-	.header {
-		display: flex;
-		align-items: center;
-	}
+    .header {
+        display: flex;
+        align-items: center;
+    }
 
-	.logo {
-		width: 45px;
-		margin-right: 15px;
-	}
+    .logo {
+        width: 45px;
+        margin-right: 15px;
+    }
 
-	.text {
-		display: flex;
-		align-items: flex-end;
-		justify-content: space-between;
-		width: 100%;
-	}
+    .text {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+    }
 
-	h3 {
-		font-weight: 500;
-		font-size: 18px;
-	}
+    h3 {
+        font-weight: 500;
+        font-size: 18px;
+    }
 
-	p {
-		font-size: 14px;
-		font-weight: 300;
-	}
+    p {
+        font-size: 14px;
+        font-weight: 300;
+    }
 
-	.body {
-		margin-top: 12px;
-	}
+    .body {
+        padding-top: 20px;
+    }
 
-	.body > p {
-		font-size: 16px;
-	}
+    .body > p {
+        font-size: 16px;
+    }
 
-	@media (max-width: 460px) {
-		.logo {
-			width: 40px;
-			margin-right: 10px;
-		}
+    @media (max-width: 460px) {
+        .work {
+            padding-top: 20px;
+        }
 
-		h3 {
-			font-size: 16px;
-		}
+        .logo {
+            width: 40px;
+            margin-right: 10px;
+        }
 
-		p {
-			font-size: 14px;
-		}
+        h3 {
+            font-size: 14px;
+            font-weight: bold;
+        }
 
-		.body > p {
-			font-size: 14px;
-		}
-	}
+        p {
+            font-size: 14px;
+        }
+
+        .body {
+            padding-top: 10px;
+        }
+
+        .body > p {
+            font-size: 14px;
+        }
+    }
 </style>
